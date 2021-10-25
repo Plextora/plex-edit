@@ -1,0 +1,94 @@
+html {
+  height: 100%;
+}
+
+.button {
+   font-family: "Lucida Console", "Courier New", monospace;
+   border-radius: 4px;
+   background-color: #FFFFFF;
+   border: none;
+   color: #000000a6;
+   text-align: center;
+   font-size: 10px;
+   padding: 20px;
+   width: 120px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: -10px;
+   text-align: center;
+}
+.button span {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+.button span:after {
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+.button:hover span {
+   padding-right: 25px;
+}
+.button:hover span:after {
+   opacity: 1;
+   right: 0;
+}
+
+body {
+  margin: auto;
+  font-family: quicksand;
+  font-weight: 900;
+  background: #0e0d14;
+  color: #92837e;
+}
+
+.pane {
+  height: 55vh;
+  display: flex;
+}
+
+
+.edit-container.collapsed {
+  transition: 1.3s;
+  flex-grow: 4.3; 
+}
+
+.edit-container.collapsed .CodeMirror-scroll {
+  overflow: auto;
+  position: absolute;
+}
+
+.edit-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.edit-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: #13101b;
+  padding: .6rem .6rem .6rem .1rem;
+  border-top-left-radius: .10rem;
+  border-top-right-radius: .10rem;
+}
+
+.CodeMirror {
+  zoom: 80%;
+  height: 100% !important;
+  padding: 10px !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
+}
