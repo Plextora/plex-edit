@@ -9,7 +9,7 @@ html {
    border: none;
    color: #000000a6;
    text-align: center;
-   font-size: 10px;
+   font-size: 9.174px;
    padding: 20px;
    width: 120px;
    transition: all 0.5s;
@@ -41,7 +41,7 @@ html {
 
 body {
   margin: auto;
-  font-family: quicksand;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: 900;
   background: #0e0d14;
   color: #92837e;
@@ -59,8 +59,7 @@ body {
 }
 
 .edit-container.collapsed .CodeMirror-scroll {
-  overflow: auto;
-  position: absolute;
+  overflow: hidden;
 }
 
 .edit-container {
@@ -68,7 +67,7 @@ body {
   flex-basis: 0;
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  padding: 10px;
 }
 
 .edit-title {
@@ -81,14 +80,10 @@ body {
 }
 
 .CodeMirror {
-  zoom: 80%;
   height: 100% !important;
-  padding: 10px !important;
 }
 
 .code-mirror-wrapper {
-  flex-grow: 1;
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  flex-grow: 5;
   overflow: hidden;
 }
